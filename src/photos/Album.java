@@ -17,5 +17,9 @@ public class Album {
     public void rename(String newName){
         name = newName;
     }
+
+    public void addPhoto(){
+        photos.add(new Photo());
+    }
     
 }

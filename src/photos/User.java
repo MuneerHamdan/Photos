@@ -20,10 +20,12 @@ public class User implements Serializable{
         albums.add(new Album());
     }
 
+    //get albums list
     public ArrayList<Album> getAlbums(){
         return albums;
     }
 
+    //get specific album by name
     public Album getAlbum(String name){
         for (Album album : albums){
             if (album.getName().equalsIgnoreCase(name)) return album;
