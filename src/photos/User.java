@@ -21,7 +21,8 @@ public class User implements Serializable{
     }
 
     //delete albums
-    public void deleteAlbum(){
+    public void deleteAlbum(Album album){
+        albums.remove(album);
 
     }
 
