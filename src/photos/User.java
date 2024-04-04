@@ -20,15 +20,25 @@ public class User implements Serializable{
         albums.add(new Album());
     }
 
+    public ArrayList<Album> getAlbums(){
+        return albums;
+    }
+
+    public Album getAlbum(String name){
+        for (Album album : albums){
+            if (album.getName().equalsIgnoreCase(name)) return album;
+        }
+        return null;
+    }
+
     //delete albums
     public void deleteAlbum(Album album){
         albums.remove(album);
-
     }
 
     //rename albums
-    public void renameAlbum(){
-
+    public void renameAlbum(Album album, String name){
+        album.rename(name);
     }
     
     //open album

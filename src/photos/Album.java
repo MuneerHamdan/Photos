@@ -13,5 +13,9 @@ public class Album {
     public String getName(){
         return name;
     }
+
+    public void rename(String newName){
+        name = newName;
+    }
     
 }
